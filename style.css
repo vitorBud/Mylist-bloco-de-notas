@@ -30,7 +30,7 @@ body {
 
 input, textarea {
     width: 100%;
-    padding: px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
@@ -72,11 +72,26 @@ button {
     text-align: center;
 }
 
-.note-content {
-    flex: 1;
-    font-size: 14px;
-    min-height: 50px; 
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    resize: none;  
 }
+
+.note-content {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
 
 .note-buttons {
     display: flex;
